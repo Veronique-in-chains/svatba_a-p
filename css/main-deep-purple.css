@@ -22,6 +22,10 @@
   padding-bottom: 0;
 }
 
+.map {
+  filter: sepia(30%);
+}
+
 .inline-label {
   display: inline;
   font-weight: 400;
@@ -267,7 +271,7 @@ ol ol {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .display-t,
@@ -678,11 +682,11 @@ img {
   left: 0;
   transition: all 0.2s ease-out;
 }
-.nav-toggle.nav-white > i {
-  color: #FFFFFF;
-  background: #FFFFFF;
+.nav-toggle.active.nav-white > i {
+  color: transparent;
+  background: transparent;
 }
-.nav-toggle.nav-white > i::before, .nav-toggle.nav-white > i::after {
+.nav-toggle.active.nav-white > i::before, .nav-toggle.active.nav-white > i::after {
   background: #FFFFFF;
 }
 
@@ -1081,6 +1085,7 @@ iframe {
   text-align: center;
   display: inline-block;
   list-style: none;
+  position: relative;
   border: solid 12px #fff;
   background: #fff;
   box-shadow: 0 0 15px 0px #555;
@@ -1088,6 +1093,7 @@ iframe {
   -o-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -webkit-transition: all 1s ease;
+  top: 50px;
 }
 .polaroid li:hover {
   top: 0px;
@@ -1439,6 +1445,9 @@ iframe {
 }
 
 /* Banner */
+.banner {
+  text-shadow: 2px 2px 7px #000000;
+}
 .banner h1,
 .banner h2 {
   color: #FFFFFF;
@@ -1918,6 +1927,7 @@ footer .copyright .block {
   background-image: url(../img/countdown-bg.jpg);
 }
 .countdown .heading {
+  text-shadow: 1px 1px 7px #000000;
   margin-bottom: 8em;
 }
 .countdown .heading h2 {

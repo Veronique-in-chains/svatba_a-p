@@ -24,6 +24,7 @@ iframe {
     text-align:center;
     display:inline-block;
     list-style:none;
+    position: relative;
     border:solid 12px #fff;
     background:#fff;
     box-shadow:0 0 15px 0px #555;
@@ -31,6 +32,7 @@ iframe {
     -o-transition:all 1s ease;
     -moz-transition:all 1s ease;
     -webkit-transition:all 1s ease;
+    top: 50px;
   }
   
   

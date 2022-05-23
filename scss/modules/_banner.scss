@@ -1,6 +1,7 @@
 @mixin module-banner {
 	/* Banner */
 	.banner {
+    text-shadow: 2px 2px 7px $brand-black;
 		h1,
 		h2 {
 			color: $brand-white;

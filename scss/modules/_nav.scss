@@ -292,10 +292,10 @@
 				transition:all .2s ease-out;
 			}
 		}
-		&.nav-white {
+		&.active.nav-white {
 		> i {
-			color: $brand-white;
-			background: $brand-white;
+			color: transparent;
+			background:transparent;
 			&::before, &::after {
 				background: $brand-white;
 			}
