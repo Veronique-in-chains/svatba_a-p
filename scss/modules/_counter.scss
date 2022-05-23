@@ -4,6 +4,9 @@
 		text-align: center;
 		background-image: url(../img/counter-bg.jpg);
 		height: 400px;
+    @include media(small) {
+      height: 600px;
+    }
 		.row {
 			@include media(small) {
 				margin-bottom: -40px;
@@ -51,4 +54,9 @@
 			}
 		}
 	}
+}
+
+
+#map {
+  padding-bottom: 0;
 }

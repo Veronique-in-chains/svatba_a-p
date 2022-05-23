@@ -3,6 +3,11 @@
 	.testimonials {
 		.wrap-testimony {
 			position: relative;
+      display: grid;
+      grid-template-columns: 1fr;
+      @include media(small) {
+        grid-template-columns: 1fr 1fr;
+      }
 		}
 		.testimony-slide {
 			text-align: center;
