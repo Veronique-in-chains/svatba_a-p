@@ -24,6 +24,7 @@
 
 .map {
   filter: sepia(30%);
+  margin-top: 100px;
 }
 
 .inline-label {
@@ -87,7 +88,7 @@ a {
 a:hover, a:active, a:focus {
   color: #4CAF50;
   outline: none;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 p {
@@ -1140,11 +1141,12 @@ iframe {
   position: absolute;
   left: 0;
   right: 0;
-  width: 700px;
-  height: 700px;
+  top: 0;
+  width: 100%;
+  height: 100%;
   background: #fff;
   filter: blur(100px);
-  opacity: 0.3;
+  opacity: 0.1;
   pointer-events: none;
 }
 

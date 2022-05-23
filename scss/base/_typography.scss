@@ -29,7 +29,7 @@ $p-text-rendering: optimizeLegibility !default;
 		&:hover, &:active, &:focus {
 			color: $brand-primary;
 			outline: none;
-			text-decoration: none;
+			text-decoration: underline;
 		}
 	}
 	p {
