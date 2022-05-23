@@ -739,7 +739,6 @@ img {
 
 /* Header section */
 .cover {
-  background-image: url("/img/header-bg.jpg");
   height: 100vh;
   background-position: top center;
   background-attachment: fixed;
