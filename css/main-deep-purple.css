@@ -12,6 +12,14 @@
   font-weight: 400;
 }
 
+textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #000000;
+  padding: 6px 12px;
+}
+
 /* Fonts */
 @font-face {
   font-family: "icomoon";
