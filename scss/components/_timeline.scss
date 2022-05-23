@@ -132,14 +132,16 @@
 		.timeline-title {
 			margin-top: 0;
 			font-size: 24px;
+      margin-bottom: 10px;
 		}
 
 		.date {
 			display: block;
-			margin-bottom: 20px;
-			font-size: 13px;
+			margin-bottom: 10px;
+			font-size: 15px;
 			text-transform: uppercase;
 			letter-spacing: 2px;
+      font-weight: 600;
 		}
 
 		.timeline-body > p,
