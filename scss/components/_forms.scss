@@ -13,6 +13,11 @@ textarea {
   padding: 6px 12px;
 }
 
+.form-foto {
+  display: block;
+  padding: 10px;
+}
+
 @mixin component-forms {
 	/* Forms */
 	.form-field {

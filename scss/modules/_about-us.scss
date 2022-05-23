@@ -1,3 +1,12 @@
+.grid-box {
+    display: block;
+  @include media(medium) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
 @mixin module-about-us {
 	/* About-us */
 	.couple-wrap {
@@ -19,7 +28,6 @@
 
 			@include media(medium) {
 				margin-bottom: 0;
-				padding-right: 30px;
 			}
 		}
 
@@ -32,8 +40,7 @@
 	.heart {
 		position: absolute;
 		top: 4em;
-		left: 0;
-		right: 0;
+		left: 49%;
 		z-index: 99;
 		animation: pulse 1s ease infinite;
 		display: none;
@@ -51,26 +58,24 @@
 		width: 150px;
 		height: 150px;
 		margin: 0 auto 10px;
-		@include border-radius(50%);
+    display: block;
 		@include media(small) {
-			// float: left;
 		}
 		img {
 			width: 150px;
 			height: 150px;
-			@include border-radius(50%);
 		}
 	}
 	.groom {
 		@include media(small) {
 			// float: right;
-			margin-right: 5px;
+			margin-right: -20px;
 		}
 	}
 	.bride {
 		@include media(small) {
 			// float: left;
-			margin-left: 5px;
+			margin-left: 0;
 		}
 	}
 	.desc-groom {

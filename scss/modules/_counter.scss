@@ -3,7 +3,7 @@
 	.counter {
 		text-align: center;
 		background-image: url(../img/counter-bg.jpg);
-		height: auto;
+		height: 400px;
 		.row {
 			@include media(small) {
 				margin-bottom: -40px;

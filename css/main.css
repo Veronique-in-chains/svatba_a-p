@@ -7,6 +7,17 @@
   }
 }
 
+.grid-box {
+  display: block;
+}
+@media only screen and (min-width: 992px) {
+  .grid-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
 .inline-label {
   display: inline;
   font-weight: 400;
@@ -18,6 +29,11 @@ textarea {
   width: 100%;
   border: 1px solid #000000;
   padding: 6px 12px;
+}
+
+.form-foto {
+  display: block;
+  padding: 10px;
 }
 
 /* Fonts */
@@ -736,7 +752,6 @@ img {
 @media only screen and (min-width: 992px) {
   .couple-wrap .groom-wrap {
     margin-bottom: 0;
-    padding-right: 30px;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -748,8 +763,7 @@ img {
 .heart {
   position: absolute;
   top: 4em;
-  left: 0;
-  right: 0;
+  left: 49%;
   z-index: 99;
   -webkit-animation: pulse 1s ease infinite;
           animation: pulse 1s ease infinite;
@@ -770,23 +784,22 @@ img {
   width: 150px;
   height: 150px;
   margin: 0 auto 10px;
-  border-radius: 50%;
+  display: block;
 }
 .groom img, .bride img {
   width: 150px;
   height: 150px;
-  border-radius: 50%;
 }
 
 @media only screen and (min-width: 768px) {
   .groom {
-    margin-right: 5px;
+    margin-right: -20px;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .bride {
-    margin-left: 5px;
+    margin-left: 0;
   }
 }
 
@@ -900,6 +913,16 @@ img {
   position: absolute;
   top: 16px;
   z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  color: gray;
+  border-radius: 50%;
+}
+.timeline .timeline-badge svg {
+  width: 80%;
+  height: 80%;
 }
 .timeline .timeline-badge img {
   border-radius: 50%;
@@ -1188,7 +1211,7 @@ iframe {
 .counter {
   text-align: center;
   background-image: url(../img/counter-bg.jpg);
-  height: auto;
+  height: 400px;
 }
 @media only screen and (min-width: 768px) {
   .counter .row {
@@ -1948,6 +1971,16 @@ footer .copyright .block {
   position: absolute;
   top: 16px;
   z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  color: gray;
+  border-radius: 50%;
+}
+.timeline .timeline-badge svg {
+  width: 80%;
+  height: 80%;
 }
 .timeline .timeline-badge img {
   border-radius: 50%;

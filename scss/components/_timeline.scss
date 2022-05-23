@@ -46,6 +46,17 @@
 			position: absolute;
 			top: 16px;
 			z-index: 100;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: lightgray;
+      color: gray;
+      @include border-radius(50%);
+
+      svg {
+        width: 80%;
+        height: 80%;
+      }
 
 			img {
 				@include border-radius(50%);
