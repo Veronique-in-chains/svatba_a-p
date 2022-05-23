@@ -101,6 +101,14 @@
 				top: $('#header').height()
 			}
 		});
+		$('.main').affix({
+			offset: {
+				top: $('#header').height()
+			}
+		});
+    $('.js-nav-toggle').removeClass('nav-white');
+
+
 	};
 
 	// Mobile menu

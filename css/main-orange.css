@@ -682,11 +682,25 @@ img {
   left: 0;
   transition: all 0.2s ease-out;
 }
-.nav-toggle.active.nav-white > i {
-  color: transparent;
+.nav-toggle.nav-white > i {
+  color: #FFFFFF;
+  background: #FFFFFF;
+}
+.nav-toggle.nav-white > i::before, .nav-toggle.nav-white > i::after {
+  background: #FFFFFF;
+}
+.affix .nav-toggle.nav-white > i {
+  color: #FFFFFF;
+  background: #000000;
+}
+.affix .nav-toggle.nav-white > i::before, .affix .nav-toggle.nav-white > i::after {
+  background: #000000;
+}
+.affix .nav-toggle.nav-white.active > i {
+  color: #FFFFFF;
   background: transparent;
 }
-.nav-toggle.active.nav-white > i::before, .nav-toggle.active.nav-white > i::after {
+.affix .nav-toggle.nav-white.active > i::before, .affix .nav-toggle.nav-white.active > i::after {
   background: #FFFFFF;
 }
 
@@ -713,11 +727,13 @@ img {
 .nav-toggle.active i::before {
   top: 0;
   transform: rotateZ(45deg);
+  background: #FFFFFF;
 }
 
 .nav-toggle.active i::after {
   bottom: 0;
   transform: rotateZ(-45deg);
+  background: #FFFFFF;
 }
 
 /* Header section */

@@ -292,14 +292,32 @@
 				transition:all .2s ease-out;
 			}
 		}
-		&.active.nav-white {
+		&.nav-white {
 		> i {
-			color: transparent;
-			background:transparent;
+			color: $brand-white;
+			background:$brand-white;
 			&::before, &::after {
 				background: $brand-white;
 			}
 		}
+		}
+		.affix &.nav-white {
+		> i {
+			color: $brand-white;
+			background:$brand-black;
+			&::before, &::after {
+				background: $brand-black;
+			}
+		}
+    &.active {
+      > i {
+        color: $brand-white;
+        background:transparent;
+        &::before, &::after {
+          background: $brand-white;
+        }
+      }
+    }
 		}
 	}
 	.nav-toggle i::before {
@@ -320,9 +338,11 @@
 	.nav-toggle.active i::before {
 		top:0;
 		transform: rotateZ(45deg);
+    background:$brand-white;
 	}
 	.nav-toggle.active i::after {
 		bottom:0;
 		transform: rotateZ(-45deg);
+    background: $brand-white;
 	}
 }
