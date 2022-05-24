@@ -1,5 +1,12 @@
 @mixin module-testimonials {
 	/* Testimonials */
+  .best-man {
+    color: #8f989f;
+    font-weight: 100;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
 	.testimonials {
 		.wrap-testimony {
 			position: relative;
@@ -11,7 +18,7 @@
 		}
 		.testimony-slide {
 			text-align: center;
-			span{
+			.name {
 				font-size: 12px;
 				text-transform: uppercase;
 				letter-spacing: 2px;
@@ -44,6 +51,7 @@
 					font-size: 20px;
 					line-height: 1.6em;
 				}
+
 			}
 			&.active {
 				display: block;

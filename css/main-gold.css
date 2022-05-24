@@ -1356,6 +1356,14 @@ iframe {
 }
 
 /* Testimonials */
+.best-man {
+  color: #8f989f;
+  font-weight: 100;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
 .testimonials .wrap-testimony {
   position: relative;
   display: grid;
@@ -1369,7 +1377,7 @@ iframe {
 .testimonials .testimony-slide {
   text-align: center;
 }
-.testimonials .testimony-slide span {
+.testimonials .testimony-slide .name {
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
