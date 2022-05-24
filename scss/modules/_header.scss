@@ -1,14 +1,10 @@
 @mixin module-header {
 	/* Header section */
 	.cover {
-    // background-image: url("/img/header-bg.jpg");
 		height: 100vh;
-		background-position: top center;
-    background-attachment: fixed;
-		background-size: cover;
-		background-repeat: no-repeat;
 		position: relative;
 		width: 100%;
+    background: transparent;
 		> .container {
 			position: relative;
 			z-index: 10;

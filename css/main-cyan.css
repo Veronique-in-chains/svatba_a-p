@@ -740,12 +740,9 @@ img {
 /* Header section */
 .cover {
   height: 100vh;
-  background-position: top center;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
   position: relative;
   width: 100%;
+  background: transparent;
 }
 .cover > .container {
   position: relative;
